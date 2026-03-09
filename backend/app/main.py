@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.db.session import engine
 from app.db.base import Base
 from app.api.auth import router as auth_router
@@ -11,6 +12,13 @@ from app.api.matches import router as matches_router
 from app.models import match_report
 
 app = FastAPI(title="Resume Matcher API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Create tables (ok for MVP; later replace with Alembic migrations)
 Base.metadata.create_all(bind=engine)
