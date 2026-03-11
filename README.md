@@ -6,7 +6,7 @@ Built with FastAPI, PostgreSQL, React (Vite), and Sentence-Transformers.
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 Recruiters manually evaluate resumes against job descriptions, which is time-consuming and subjective.
 
@@ -20,7 +20,7 @@ This project automates that process by:
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 **Backend:** FastAPI  
 **Frontend:** React (Vite + Tailwind)  
@@ -42,7 +42,7 @@ Flow:
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - FastAPI
@@ -61,7 +61,7 @@ Flow:
 
 ---
 
-## 📊 Matching Logic
+##  Matching Logic
 
 The overall score is computed using a weighted combination:
 
@@ -126,7 +126,7 @@ The response also includes:
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 - JWT-based authentication
 - Password hashing using bcrypt
@@ -135,7 +135,7 @@ The response also includes:
 
 ---
 
-## 📦 API Endpoints
+## API Endpoints
 
 ### Auth
 - `POST /auth/register`
@@ -157,7 +157,7 @@ The response also includes:
 
 ---
 
-## 🖥️ Running Locally
+## Running Locally
 
 ### Backend
 
@@ -185,7 +185,7 @@ http://localhost:5173
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 - Async background job queue for resume processing
 - Embedding caching (Redis)
@@ -196,7 +196,7 @@ http://localhost:5173
 
 ---
 
-## 🎯 Why This Project Matters
+## Why This Project Matters
 
 This project demonstrates:
 
